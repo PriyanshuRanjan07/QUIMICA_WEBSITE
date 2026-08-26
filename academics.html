@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Structure — QUIMICA | BIT Sindri</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .curriculum-grid-large {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 32px;
+    }
+
+    .curriculum-card-large {
+      background: var(--bg-card);
+      border: 1.5px solid var(--orange-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      transition: all var(--transition-normal);
+    }
+
+    .curriculum-card-large:hover {
+      border-color: var(--primary-orange);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(255, 122, 0, 0.22);
+    }
+
+    .curriculum-img-large {
+      width: 100%;
+      height: auto;
+      min-height: 280px;
+      object-fit: contain;
+      background: #0d0906;
+      border-bottom: 1.5px solid var(--orange-border);
+      padding: 12px;
+    }
+
+    .curriculum-card-large-body {
+      padding: 24px;
+    }
+
+    .curriculum-card-large-body h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--primary-orange);
+      margin-bottom: 8px;
+    }
+
+    .curriculum-card-large-body p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .view-sheet-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      color: var(--light-orange);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .view-sheet-btn:hover {
+      color: var(--primary-orange);
+    }
+
+    @media (max-width: 600px) {
+      .curriculum-grid-large {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrapper">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <div>
+          <span class="nav-brand-title">QUIMICA</span>
+          <span class="nav-brand-sub">BIT Sindri</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fas fa-bars"></i></label>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          
+          <li class="nav-item dropdown">
+            <a href="index.html#about" class="nav-link">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#about">About Society</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="events.html" class="nav-link">Events <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#featured">Quimica'26</a></li>
+              <li><a href="events.html">All Events &amp; Fests</a></li>
+            </ul>
+          </li>
+
+          <!-- Media Dropdown (Active) -->
+          <li class="nav-item dropdown">
+            <a href="academics.html" class="nav-link active">Media &amp; Publications <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="gallery.html">Society Gallery</a></li>
+              <li><a href="magazine.html">Annual Magazines</a></li>
+              <li><a href="academics.html">Course Structure</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#contact" class="nav-contact-btn">
+          Contact Us <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section-container subpage-hero">
+    <div class="section-header">
+      <span class="section-tag">Academic Matrix</span>
+      <h1 class="section-title">Course <span class="gradient-text">Structure</span></h1>
+      <div class="section-divider"></div>
+      <p style="color: var(--text-muted); max-width: 650px; margin: 18px auto 0; font-size: 0.95rem;">
+        Detailed semester-wise syllabus breakdown and course pathways for B.Tech in Chemical Engineering at BIT Sindri.
+      </p>
+    </div>
+
+    <!-- ENLARGED COURSE STRUCTURE GRID -->
+    <div class="curriculum-grid-large">
+      
+      <!-- Semester I -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem1.png" alt="Semester I Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester I</h3>
+          <p>Covers fundamental engineering mathematics, physics, engineering graphics, basic electrical systems, and foundational laboratory practice.</p>
+          <a href="assets/sem1.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester II -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem2.png" alt="Semester II Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester II</h3>
+          <p>Covers advanced engineering mathematics, general engineering chemistry, programming in C, workshop fundamentals, and communication skills.</p>
+          <a href="assets/sem2.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester III -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem3.png" alt="Semester III Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester III</h3>
+          <p>Introduces core department subjects including Fluid Mechanics, Material and Energy Balance Calculations, and Chemical Engineering Thermodynamics-I.</p>
+          <a href="assets/sem3.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester IV -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem4.png" alt="Semester IV Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester IV</h3>
+          <p>Focuses on Heat Transfer Operations, Mechanical Operations &amp; Particle Technology, Thermodynamics-II, and Numerical Analysis Methods.</p>
+          <a href="assets/sem4.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester V -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem5.png" alt="Semester V Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester V</h3>
+          <p>In-depth coverage of Mass Transfer Operations-I (Distillation, Absorption), Chemical Reaction Engineering-I, and Inorganic Chemical Technology.</p>
+          <a href="assets/sem5.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester VI -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem6.png" alt="Semester VI Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester VI</h3>
+          <p>Advanced Mass Transfer-II (Extraction, Drying, Membrane separation), Process Dynamics &amp; Instrumentation Control, and Petroleum Refinery Engineering.</p>
+          <a href="assets/sem6.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester VII -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem7.png" alt="Semester VII Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester VII</h3>
+          <p>Plant Design and Economics, Industrial Safety &amp; Hazardous Waste Mitigation, Biochemical Engineering, and Departmental Electives.</p>
+          <a href="assets/sem7.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Semester VIII -->
+      <div class="curriculum-card-large">
+        <img src="assets/sem8.png" alt="Semester VIII Course Structure" class="curriculum-img-large" />
+        <div class="curriculum-card-large-body">
+          <h3>Semester VIII</h3>
+          <p>Major Capstone Project, Comprehensive Viva-Voce, Industrial In-Plant Training Seminars, and Advanced Polymer Science.</p>
+          <a href="assets/sem8.png" target="_blank" class="view-sheet-btn">Open Full Resolution Diagram <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <span class="footer-brand-title">QUIMICA</span>
+        <p class="footer-desc">
+          Official Student Society of the Chemical Engineering Department, BIT Sindri. Igniting curiosity, academic excellence, and technical innovation.
+        </p>
+        <p style="font-size:0.82rem;color:var(--text-dim); margin-top: 14px;">
+          <i class="fas fa-map-pin orange-text"></i> MC 31, Chemical Dept., BIT Sindri, Dhanbad — 828123
+        </p>
+      </div>
+
+      <div class="footer-social-section">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; margin-top: 4px;">
+          Follow our official channels for fest registrations and technical articles:
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://www.facebook.com/quimicabits" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/quimica-bit-sindri/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/quimicabits_blog/" target="_blank" rel="noopener" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/Quimica_BITS" target="_blank" rel="noopener" class="social-btn" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@quimicabits8163" target="_blank" rel="noopener" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">CONTACT <span class="orange-text">US</span></h4>
+        <div style="font-size: 0.88rem; color: #FFF; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.3px;">
+          RAJ KUMAR BARNWAL (2K23)
+        </div>
+        <div style="font-size: 0.92rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px;">
+          +91 7667010887
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;">
+          Department of Chemical Engineering, BIT Sindri
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 QUIMICA — Chemical Engineering Society, BIT Sindri. All rights reserved.</div>
+      <div>BY PRIYANSHU RANJAN</div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Society Gallery — QUIMICA | BIT Sindri</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .gallery-category-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: #FFFFFF;
+      margin: 36px 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .gallery-category-title::before {
+      content: "";
+      width: 4px;
+      height: 22px;
+      background: var(--primary-orange);
+      border-radius: var(--radius-full);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrapper">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <div>
+          <span class="nav-brand-title">QUIMICA</span>
+          <span class="nav-brand-sub">BIT Sindri</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fas fa-bars"></i></label>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          
+          <li class="nav-item dropdown">
+            <a href="index.html#about" class="nav-link">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#about">About Society</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="events.html" class="nav-link">Events <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#featured">Quimica'26</a></li>
+              <li><a href="events.html">All Events &amp; Fests</a></li>
+            </ul>
+          </li>
+
+          <!-- Media Dropdown (Active) -->
+          <li class="nav-item dropdown">
+            <a href="gallery.html" class="nav-link active">Media &amp; Publications <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="gallery.html">Society Gallery</a></li>
+              <li><a href="magazine.html">Annual Magazines</a></li>
+              <li><a href="academics.html">Course Structure</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#contact" class="nav-contact-btn">
+          Contact Us <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section-container subpage-hero">
+    <div class="section-header">
+      <span class="section-tag">Visual Chronicles</span>
+      <h1 class="section-title">Society <span class="gradient-text">Gallery</span></h1>
+      <div class="section-divider"></div>
+      <p style="color: var(--text-muted); max-width: 650px; margin: 18px auto 0; font-size: 0.95rem;">
+        Moments and memories captured across annual technical colloquiums, orientations, and departmental celebrations.
+      </p>
+    </div>
+
+    <!-- Category 1: Quimica'26 -->
+    <h3 class="gallery-category-title">Quimica '26 Collection</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="assets/gallery/Quimica26/image1.jpg" alt="Quimica 26 Photo 1" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica26/image2.jpg" alt="Quimica 26 Photo 2" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica26/image3.jpg" alt="Quimica 26 Photo 3" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica26/image4.jpg" alt="Quimica 26 Photo 4" /></div>
+
+    </div>
+
+    <!-- Category 2: Orientation'25 -->
+    <h3 class="gallery-category-title">Orientation '25 Gathering</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image2.JPG" alt="Orientation 25 Keynote" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image4.JPG" alt="Orientation 25 Presentation" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image5.JPG" alt="Orientation 25 Faculty" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image8.jpeg" alt="Orientation 25 Session" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image11.jpeg" alt="Orientation 25 Audience" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image12.jpeg" alt="Orientation 25 Interaction" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image14.jpeg" alt="Orientation 25 Team" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image20.jpeg" alt="Orientation 25 Mentors" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image29.JPG" alt="Orientation 25 Students" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image30.JPG" alt="Orientation 25 Group" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Orientation25/image33.JPG" alt="Orientation 25 Stage" /></div>
+    </div>
+
+    <!-- Category 3: Quimica'25 -->
+    <h3 class="gallery-category-title">Quimica '25 Highlights</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image3.JPG" alt="Quimica 25 Stage" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image5.JPG" alt="Quimica 25 Speakers" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image7.JPG" alt="Quimica 25 Workshops" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image10.JPG" alt="Quimica 25 Fest Gathering" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image14.JPG" alt="Quimica 25 Competition" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image17.JPG" alt="Quimica 25 Team" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image18.JPG" alt="Quimica 25 Presentation" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica25/image20.JPG" alt="Quimica 25 Panel" /></div>
+    </div>
+
+    <!-- Category 4: Quimica'23 -->
+    <h3 class="gallery-category-title">Quimica '23 Inaugural Edition</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image1.jpg" alt="Quimica 23 Inauguration" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image2.jpg" alt="Quimica 23 Keynote Speech" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image7.jpg" alt="Quimica 23 Paper Presentation" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image10.jpg" alt="Quimica 23 Attendees" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image12.jpg" alt="Quimica 23 Dignitaries" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image13.jpg" alt="Quimica 23 Felicitation" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image16.jpg" alt="Quimica 23 Technical Fest" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image17.jpg" alt="Quimica 23 Awards" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image23.jpg" alt="Quimica 23 Gathering" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image24.jpg" alt="Quimica 23 Group Photo" /></div>
+      <div class="gallery-item"><img src="assets/gallery/Quimica23/image30.jpg" alt="Quimica 23 Celebration" /></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <span class="footer-brand-title">QUIMICA</span>
+        <p class="footer-desc">
+          Official Student Society of the Chemical Engineering Department, BIT Sindri. Igniting curiosity, academic excellence, and technical innovation.
+        </p>
+        <p style="font-size:0.82rem;color:var(--text-dim); margin-top: 14px;">
+          <i class="fas fa-map-pin orange-text"></i> MC 31, Chemical Dept., BIT Sindri, Dhanbad — 828123
+        </p>
+      </div>
+
+      <div class="footer-social-section">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; margin-top: 4px;">
+          Follow our official channels for fest registrations and technical articles:
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://www.facebook.com/quimicabits" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/quimica-bit-sindri/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/quimicabits_blog/" target="_blank" rel="noopener" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/Quimica_BITS" target="_blank" rel="noopener" class="social-btn" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@quimicabits8163" target="_blank" rel="noopener" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">CONTACT <span class="orange-text">US</span></h4>
+        <div style="font-size: 0.88rem; color: #FFF; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.3px;">
+          RAJ KUMAR BARNWAL (2K23)
+        </div>
+        <div style="font-size: 0.92rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px;">
+          +91 7667010887
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;">
+          Department of Chemical Engineering, BIT Sindri
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 QUIMICA — Chemical Engineering Society, BIT Sindri. All rights reserved.</div>
+      <div>BY PRIYANSHU RANJAN</div>
+    </div>
+  </footer>
+
+</body>
+</html>

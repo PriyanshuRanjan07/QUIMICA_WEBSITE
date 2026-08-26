@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUIMICA — Chemical Engineering Society | BIT Sindri</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrapper">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <div>
+          <span class="nav-brand-title">QUIMICA</span>
+          <span class="nav-brand-sub">BIT Sindri</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fas fa-bars"></i></label>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          
+          <li class="nav-item dropdown">
+            <a href="index.html#about" class="nav-link">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#about">About Society</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="events.html" class="nav-link">Events <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#featured">Quimica'26</a></li>
+              <li><a href="events.html">All Events &amp; Fests</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="media.html" class="nav-link">Media &amp; Publications <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="gallery.html">Society Gallery</a></li>
+              <li><a href="magazine.html">Annual Magazines</a></li>
+              <li><a href="academics.html">Course Structure</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#contact" class="nav-contact-btn">
+          Contact Us <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- VIBRANT HERO SECTION -->
+  <section class="hero" id="home" style="position: relative; min-height: 94vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; overflow: hidden; margin-top: -85px;">
+    <video autoplay muted loop playsinline poster="assets/department2.png" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.6) saturate(1.45) contrast(1.15);">
+      <source src="assets/background.mp4" type="video/mp4" />
+      <source src="hero_video.mp4" type="video/mp4" />
+    </video>
+    <div style="position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(10, 7, 5, 0.25) 0%, rgba(10, 7, 5, 0.78) 75%, var(--bg-dark) 100%); z-index: 1;"></div>
+
+    <div style="position: relative; z-index: 2; max-width: 860px; margin: 0 auto; padding-top: 80px; display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 600; background: rgba(18, 12, 8, 0.85); border: 1px solid var(--orange-border); backdrop-filter: blur(8px);">
+          <span style="width: 8px; height: 8px; background: var(--primary-orange); border-radius: 50%; box-shadow: 0 0 10px var(--primary-orange); animation: pulseDot 1.8s infinite;"></span>
+          <span>BIT Sindri, Dhanbad</span>
+        </div>
+        <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 600; background: rgba(18, 12, 8, 0.85); border: 1px solid var(--orange-border); backdrop-filter: blur(8px);">
+          <i class="fas fa-flask orange-text"></i>
+          <span>Department of Chemical Engineering</span>
+        </div>
+      </div>
+
+      <h1 style="font-family: var(--font-brand); font-size: clamp(3.2rem, 8vw, 5.8rem); font-weight: 800; line-height: 1.05; letter-spacing: 10px; margin: 10px 0 12px; background: linear-gradient(135deg, #FFFFFF 10%, var(--light-orange) 50%, var(--primary-orange) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+        QUIMICA
+      </h1>
+
+      <div>
+        <div style="margin: 0 0 18px; padding: 5px 26px; font-family: var(--font-brand); display: inline-block; border: 1px solid var(--primary-orange); border-radius: var(--radius-full); background: rgba(11, 6, 3, 0.85); box-shadow: 0 0 15px rgba(255, 122, 0, 0.25); font-size: 1.1rem; font-weight: 500;">
+          Chemical Engineering <span class="orange-text">Society</span>
+        </div>
+      </div>
+
+      <p style="font-size: clamp(0.98rem, 2vw, 1.12rem); color: var(--text-muted); max-width: 660px; margin: 0 auto 34px; line-height: 1.7;">
+        The official student body of the Chemical Engineering Department at BIT Sindri — fostering curiosity, technical acumen, research, and innovation through technical colloquiums and seminars.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="#featured" class="btn btn-primary">Explore Quimica'26 <i class="fas fa-arrow-right"></i></a>
+        <a href="#about" class="btn btn-secondary">Know About Society</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section-container" id="about">
+    <div class="section-header">
+      <span class="section-tag">About The Society</span>
+      <h2 class="section-title">Legacy of <span class="gradient-text">Innovation</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div style="background: var(--bg-card); border: 1px solid var(--orange-border); border-radius: var(--radius-lg); padding: 48px; backdrop-filter: blur(12px); display: grid; grid-template-columns: 1.2fr 1fr; gap: 46px; align-items: center;">
+      <div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: 16px;">Official Chemical Engineering Society</h3>
+        <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem; line-height: 1.8;">
+          <strong class="orange-text">QUIMICA</strong> is the official branch society of the Chemical Engineering Department, which also hosts an annual technical colloquium.
+        </p>
+        <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem; line-height: 1.8;">
+          Founded by ambitious students, the organization has since grown to include professors, alumni, and industry professionals.
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+          Its significant events in the past were Innoverse, SmartScape, ElementaX, Jeopardy, Shaastra, Tech Kriti, Advaita, and various career seminars.
+        </p>
+        <p style="margin-top: 18px; font-size: 0.95rem;">
+          Office Location: <strong style="color: #FFF;">MC 31, Chemical Department Building, BIT Sindri.</strong>
+        </p>
+      </div>
+
+      <div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1.5px solid var(--orange-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <img src="assets/department2.png" alt="Department of Chemical Engineering BIT Sindri" onerror="this.src='department2.jpg'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EVENT (QUIMICA 2K26) -->
+  <section class="section-container" id="featured">
+    <div class="section-header">
+      <span class="section-tag">Flagship Technical Colloquium</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Event 2026</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(28, 18, 12, 0.85) 0%, rgba(18, 12, 8, 0.95) 100%); border: 1.5px solid var(--orange-border); border-radius: var(--radius-lg); padding: 44px; box-shadow: 0 0 35px rgba(255, 122, 0, 0.12); display: grid; grid-template-columns: 340px 1fr; gap: 44px; align-items: center;">
+      <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--primary-orange); box-shadow: 0 0 25px var(--orange-glow);">
+        <img src="assets/quimica2k26.jpeg" alt="Quimica 2026 Poster" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+
+      <div>
+        <h3 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 800; margin-bottom: 12px;" class="gradient-text">QUIMICA 26</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">
+          The grand annual technical colloquium of the Chemical Engineering Department at BIT Sindri. Experience keynote panels, technical paper presentations, case competitions, industry networking, and inter-college challenges.
+        </p>
+        
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0 28px;">
+          <div style="display: flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 16px; border-radius: var(--radius-md); font-size: 0.85rem; color: var(--text-muted);">
+            <i class="fas fa-location-dot orange-text"></i>
+            <span><strong>Venue:</strong> Chemical Dept, BIT Sindri</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); padding: 8px 16px; border-radius: var(--radius-md); font-size: 0.85rem; color: var(--text-muted);">
+            <i class="fas fa-globe orange-text"></i>
+            <span><strong>Eligibility:</strong> Open to All Colleges</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Register For Colloquium <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIGGER OUR SEGMENTS SECTION -->
+  <section class="section-container" id="segments">
+    <div class="section-header">
+      <h2 class="section-title">OUR <span class="gradient-text">SEGMENTS</span></h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="segments-grid">
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/Behind_the_breakthrough.jpg" alt="Behind the Breakthrough" />
+        </div>
+        <div class="segment-title">Behind the Breakthrough</div>
+      </div>
+
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/Then_vs_now.jpg" alt="Then vs Now" />
+        </div>
+        <div class="segment-title">Then vs Now</div>
+      </div>
+
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/chess.png" alt="CHESS" />
+        </div>
+        <div class="segment-title">CHESS</div>
+      </div>
+
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/chemshot.png" alt="Chemshot" />
+        </div>
+        <div class="segment-title">Chemshot</div>
+      </div>
+
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/What_if.jpg" alt="What If?" />
+        </div>
+        <div class="segment-title">What If?</div>
+      </div>
+
+      <div class="segment-card">
+        <div class="segment-img-box">
+          <img src="assets/myth_vs_fact.jpg" alt="Myth vs Fact" />
+        </div>
+        <div class="segment-title">Myth vs Fact</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (WITHOUT QUICK LINKS) -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <span class="footer-brand-title">QUIMICA</span>
+        <p class="footer-desc">
+          Official Student Society of the Chemical Engineering Department, BIT Sindri. Igniting curiosity, academic excellence, and technical innovation.
+        </p>
+        <p style="font-size:0.82rem;color:var(--text-dim);">
+          <i class="fas fa-map-pin orange-text"></i> MC 31, Chemical Dept., BIT Sindri, Dhanbad — 828123
+        </p>
+      </div>
+
+      <!-- Col 2: Socials -->
+      <div class="footer-social-section">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; margin-top: 4px;">
+          Follow our official channels for fest registrations and technical articles:
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://www.facebook.com/quimicabits" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/quimica-bit-sindri/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/quimicabits_blog/" target="_blank" rel="noopener" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/Quimica_BITS" target="_blank" rel="noopener" class="social-btn" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@quimicabits8163" target="_blank" rel="noopener" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 3: Direct Contact Details -->
+      <div>
+        <h4 class="footer-heading">CONTACT <span class="orange-text">US</span></h4>
+        <div style="font-size: 0.88rem; color: #FFF; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.3px;">
+          RAJ KUMAR BARNWAL (2K23)
+        </div>
+        <div style="font-size: 0.92rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px;">
+          +91 7667010887
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;">
+          Department of Chemical Engineering, BIT Sindri
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 QUIMICA — Chemical Engineering Society, BIT Sindri. All rights reserved.</div>
+      <div>BY PRIYANSHU RANJAN</div>
+    </div>
+  </footer>
+
+</body>
+</html>

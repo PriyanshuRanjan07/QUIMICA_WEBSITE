@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty Advisors — QUIMICA | BIT Sindri</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav-wrapper">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <div>
+          <span class="nav-brand-title">QUIMICA</span>
+          <span class="nav-brand-sub">BIT Sindri</span>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fas fa-bars"></i></label>
+
+      <div class="nav-center">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          
+          <li class="nav-item dropdown">
+            <a href="index.html#about" class="nav-link active">About <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#about">About Society</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="events.html" class="nav-link">Events <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#featured">Quimica'26</a></li>
+              <li><a href="events.html">All Events &amp; Fests</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="media.html" class="nav-link">Media &amp; Publications <i class="fas fa-chevron-down" style="font-size:0.6rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="gallery.html">Society Gallery</a></li>
+              <li><a href="magazine.html">Annual Magazines</a></li>
+              <li><a href="academics.html">Course Structure</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#contact" class="nav-contact-btn">
+          Contact Us <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section-container subpage-hero">
+    <div class="section-header">
+      <span class="section-tag">Department Mentors</span>
+      <h1 class="section-title">Our Respected <span class="gradient-text">Faculty</span></h1>
+      <div class="section-divider"></div>
+      <p style="color: var(--text-muted); max-width: 650px; margin: 18px auto 0; font-size: 0.95rem;">
+        Distinguished professors and academic advisors guiding the Chemical Engineering Department and QUIMICA toward pioneering technical and research excellence.
+      </p>
+    </div>
+
+    <!-- FACULTY GRID (STYLE PRESERVED, TEXT MATCHING SCREENSHOT) -->
+    <div class="people-grid">
+      
+      <!-- 1. Dr. Amit Kumar Gupta -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/AmitSir.png" alt="Dr. Amit Kumar Gupta" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Amit Kumar Gupta</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">HOD and Associate Professor</div>
+      </div>
+
+      <!-- 2. Dr. Amar Kumar -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/AmarSir.jpeg" alt="Dr. Amar Kumar" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Amar Kumar</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 3. Dr. Ajay Oraon -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/AjaySir.png" alt="Dr. Ajay Oraon" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Ajay Oraon</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 4. Dr. Usha Kumari -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/UshaMam.jpeg" alt="Dr. Usha Kumari" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Usha Kumari</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 5. Dr. Sunil Kumar Singh -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/SunilSir.jpeg" alt="Dr. Sunil Kumar Singh" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Sunil Kumar Singh</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 6. Prof. Manish Kumar -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/ManishSir.jpeg" alt="Prof. Manish Kumar" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Prof. Manish Kumar</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 7. Dr. Diwakar Pandey -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/DiwakarSir.jpeg" alt="Dr. Diwakar Pandey" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Diwakar Pandey</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 8. Dr. Abhishek Anand Hembrom -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/AbhishekSir.jpeg" alt="Dr. Abhishek Anand Hembrom" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Abhishek Anand Hembrom</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 9. Dr. Ashok Kumar Baranwal -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/AshokSir.jpeg" alt="Dr. Ashok Kumar Baranwal" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Ashok Kumar Baranwal</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 10. Dr. Nirupama -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/NirupamaMam.jpeg" alt="Dr. Nirupama" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Nirupama</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 11. Dr. Ch. V. Raghunath -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/RaghuSir.jpeg" alt="Dr. Ch. V. Raghunath" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Ch. V. Raghunath</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 12. Prof. Pitho Hansda -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/PithoSir.jpeg" alt="Prof. Pitho Hansda" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Prof. Pitho Hansda</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 13. Prof. Devina Ratnam -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/DevinaMam.png" alt="Prof. Devina Ratnam" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Prof. Devina Ratnam</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+      <!-- 14. Dr. Poornima Pandey -->
+      <div class="person-card">
+        <img class="person-avatar" src="assets/proffesors/PoornimaMam.jpeg" alt="Dr. Poornima Pandey" />
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 4px; color: #FFF;">Dr. Poornima Pandey</h4>
+        <div style="font-size: 0.8rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 4px;">Assistant Professor</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <img src="assets/quimicaLogoWhite.png" alt="QUIMICA Logo" onerror="this.src='assets/chemshot.png'" />
+        <span class="footer-brand-title">QUIMICA</span>
+        <p class="footer-desc">
+          Official Student Society of the Chemical Engineering Department, BIT Sindri. Igniting curiosity, academic excellence, and technical innovation.
+        </p>
+        <p style="font-size:0.82rem;color:var(--text-dim);">
+          <i class="fas fa-map-pin orange-text"></i> MC 31, Chemical Dept., BIT Sindri, Dhanbad — 828123
+        </p>
+      </div>
+
+      <!-- Col 2: Socials -->
+      <div class="footer-social-section">
+        <h4 class="footer-heading">Connect With Us</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; margin-top: 4px;">
+          Follow our official channels for fest registrations and technical articles:
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://www.facebook.com/quimicabits" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/quimica-bit-sindri/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/quimicabits_blog/" target="_blank" rel="noopener" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/Quimica_BITS" target="_blank" rel="noopener" class="social-btn" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@quimicabits8163" target="_blank" rel="noopener" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 3: Direct Contact Details -->
+      <div>
+        <h4 class="footer-heading">CONTACT <span class="orange-text">US</span></h4>
+        <div style="font-size: 0.88rem; color: #FFF; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.3px;">
+          RAJ KUMAR BARNWAL (2K23)
+        </div>
+        <div style="font-size: 0.92rem; color: var(--primary-orange); font-weight: 600; margin-bottom: 12px; letter-spacing: 0.5px;">
+          +91 7667010887
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-dim); line-height: 1.5;">
+          Department of Chemical Engineering, BIT Sindri
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 QUIMICA — Chemical Engineering Society, BIT Sindri. All rights reserved.</div>
+      <div>BY PRIYANSHU RANJAN</div>
+    </div>
+  </footer>
+
+</body>
+</html>
